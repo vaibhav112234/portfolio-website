@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio website of Vaibhav Parab. A summary of professional experience, skills, projects details and contact information." />
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Vaibhav - Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
+    <style>
+        body {
+            background: #464646;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar  -->
+    <nav id="desktop-nav">
+        <div class="logo"><a href=""><mark>Vaibhav Parab</mark></a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+
+                <li><a href="#contact">Contact-Me</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <nav id="parab-nav">
+        <div class="logo">Vaibhav Parab</div>
+        <div class="parab-menu">
+            <div class="parab-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">ABOUT</a></li>
+                <li><a href="#experiene" onclick="toggleMenu()">EXPERIENCE</a></li>
+
+                <li><a href="#contact" onclick="toggleMenu()">CONTACT</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./images/second.jpg" class="hero-image" alt="vai profile">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'am</p>
+            <h1 class="title">Vaibhav </h1>
+            <p class="section__text__p2 role"> Frontend Developer</p> <!-- Frontend Developer  -->
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('images/Vaibhav.pdf')">Download
+                    CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
+            </div>
+            <div id="socials-container">
+                <img src="./images/linkedin.png" target="_blank" alt="linkedin profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com'  ">
+                <img src="./images/github.png" target="_blank" alt="github profile" class="icon"
+                    onclick="location.href='https://github.com/vaibhav112234'  ">
+            </div>
+        </div>
+    </section>
+
+    <!-- about section  -->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./images/vaibhav.jpeg.jpeg" class="about-pic" alt="">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./images/experience.png" alt="experince icon" class="icon">
+                        <h3>EXPERIENCE</h3>
+                        <p>2 month<br> Frontend Development<br># Oisis infobytech</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./images/experience.png" alt="experince icon" class="icon">
+                        <h3>Education</h3>
+                        <p> <br>BSc In Computer Science</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    Hello there! I'm , <br> <b>Vaibhav</b>, and I'm excited to welcome you to my portfolio website.
+                    Here,
+                    I'm sharing my journey, projects, and skills with you. <br>
+                    I work as a <b>Frontend Developer</b>. <br>
+                    I've been lucky to work on different projects, and I've gotten better at my developing skills . <br>
+                    I'm using this platform to show case my work. Thanks for stopping by my portfolio, and feel free to
+                    - <b> <a href="#contact">contact-me</a> </b>, Explore My
+                    Work. <br>
+                    Let's connect and explore together! <br>
+                    Best regards, <br>
+                    <b>-Vaibhav</b>
+                </div>
+            </div>
+        </div>
+        <img src="./images/arrow.png" alt="arrow icon " class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <!-- experience section -->
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experience</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experience</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Javascipt</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Bootstrap</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Node-js</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Express-js</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    </div>
+    <img src="./images/arrow.png" alt="arrow icon " class="icon arrow " onclick="location.href='./#contact'">
+    </section>
+
+    <!-- contact me  -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact-Me</h1>
+        <div class="contact-info-upper-container ">
+            <div class="contact-info-container">
+                <img src="./images/email.png" alt="email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:vaibhav21102001@gmail.com">Email-Me</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./images/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com">LinkedIn-ME</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+
+                    <li><a href="#contact">Contact-Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Vaibhav . All Rights Reserved</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!--this is for name slider -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
